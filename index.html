@@ -131,8 +131,21 @@
 </head>
 <body>
   <header>
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczN193HFv98b9hb3TZIC7MDcT14zh0izCpgv_x2G4onZF-jZK6Nf-rLk0lFzo8QcqwboV6Ja6PYlSxpxLETQYvFLVf1PLtDWuVjotfmrebTlBoNf2YHFek50CO8NOhxVPBglVr9eQvKHJ_zZR2ru1r32=w748-h187-s-no-gm?authuser=0" alt="Dogs playing" class="hero__background">
-    </video>
+  <video autoplay muted loop playsinline webkit-playsinline poster="Assets/videos/thumbnail.jpg" class="hero__background">
+    <source src="Assets/videos/dogs_playing_silent.mp4" type="video/mp4">
+  </video>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const video = document.querySelector(".hero__background");
+    if (video) {
+      video.muted = true; // garante autoplay no iOS
+      video.play().catch(() => {
+        console.log("Autoplay bloqueado — aguardando interação do usuário.");
+      });
+    }
+  });
+  </script>
     <div>
       <h1>🐶 Vinícius Oliveira</h1>
       <p>Amor, carinho e cuidado com seu pet — como parte da minha família ❤️</p>
@@ -188,6 +201,7 @@
 
 </body>
 </html>
+
 
 
 
