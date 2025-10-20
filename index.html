@@ -131,24 +131,7 @@
 </head>
 <body>
   <header>
-  <video autoplay muted loop playsinline webkit-playsinline poster="Assets/videos/thumbnail.jpg" class="hero__background">
-    <source src="Assets/videos/dogs_playing_silents.mp4" type="video/mp4">
-  </video>
-  <noscript>
-    <img src="Assets/videos/dogs_playing_gif.gif" alt="Dogs playing" class="hero__background">
-  </noscript>
-  
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const video = document.querySelector(".hero__background");
-    if (video) {
-      video.muted = true; // garante autoplay no iOS
-      video.play().catch(() => {
-        console.log("Autoplay bloqueado — aguardando interação do usuário.");
-      });
-    }
-  });
-  </script>
+  <img src="Assets/videos/dogs_playing.gif" alt="Dogs playing" class="hero__background">  
     <div>
       <h1>🐶 Vinícius Oliveira</h1>
       <p>Amor, carinho e cuidado com seu pet — como parte da minha família ❤️</p>
@@ -204,6 +187,7 @@
 
 </body>
 </html>
+
 
 
 
