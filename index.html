@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinícius Oliveira | Amor e cuidado com seu pet 🐾</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="https://em-content.zobj.net/thumbs/240/apple/354/dog-face_1f436.png">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f7fbff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;              /* <- volta essa linha! */
+      min-height: 40vh;                /* aumenta pra o vídeo cobrir melhor */
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;                /* corta qualquer excesso do vídeo */
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .service {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 280px;
+      transition: 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service i {
+      font-size: 2.2rem;
+      color: #3b82f6;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .hero__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;                   
+      object-fit: cover;
+      z-index: -1;                     
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8rem; }
+      .service { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <video class="hero__background" autoplay muted loop>
+        <source src="Assets/videos/dogs_playing.mp4" type="video/mp4" />
+    </video> 
+    <div>
+      <h1>🐶 Vinícius Oliveira</h1>
+      <p>Amor, carinho e cuidado com seu pet — como parte da minha família ❤️</p>
+      <a class="btn-whatsapp" href="https://wa.me/5531992731109" target="_blank">
+        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+      </a>
+    </div>   
+  </header>
+
+  <section id="servicos">
+    <h2>🐾 Meus Serviços</h2>
+    <div class="services">
+      <div class="service">
+        <i class="fa-solid fa-house-chimney"></i>
+        <h3>Hospedagem</h3>
+        <p>Ambiente seguro, confortável e cheio de carinho para seu pet descansar e brincar enquanto você estiver fora.</p>
+      </div>
+
+      <div class="service">
+        <i class="fa-solid fa-person-walking"></i>
+        <h3>Passeio</h3>
+        <p>Passeios tranquilos, seguros e divertidos — respeitando o ritmo e a energia do seu bichinho!</p>
+      </div>
+
+      <div class="service">
+        <i class="fa-solid fa-paw"></i>
+        <h3>Visita domiciliar</h3>
+        <p>Cuido do seu pet no conforto da sua casa — alimentação, água fresca e muito carinho garantidos!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>🐕 Sobre mim</h2>
+    <p>Sou <strong>Vinícius Oliveira</strong>, apaixonado por animais desde criança.  
+    Tenho um espaço amplo e seguro no <strong>Bairro Castelo — Belo Horizonte</strong>, na Rua Cecília Fonseca Coutinho, preparado para receber seu bichinho com todo o conforto e amor.  
+    Cuido de cada pet como se fosse meu — com atenção, respeito e dedicação.</p>
+    <p>Com o tempo, desenvolvi um <strong>bom conhecimento em cuidados e comportamento animal</strong>, além de muita paciência e carinho em lidar com cada personalidade.</p>
+    <p>Aqui, cada pet é tratado com <strong>respeito, cuidado e dedicação</strong>, garantindo uma estadia tranquila, cheia de afeto e segurança. 🐶❤️</p>
+  </section>
+
+  <footer class="footer">
+    <p>📍 Bairro Castelo — Belo Horizonte/MG</p>
+    <p>📞 <a href="https://wa.me/5531992731109" target="_blank">(31) 99273-1108</a></p>
+    <br>
+      Made with
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#f64348" stroke="#f64348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+      by
+      <a href="https://github.com/OVinicius1995/" target="_blank">@ViniciusOliveira </a>© 2025 Vinícius Oliveira — Amor e cuidado com seu pet 🐾
+  </footer>
+
+</body>
+</html>
